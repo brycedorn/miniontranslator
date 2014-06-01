@@ -1,6 +1,4 @@
-Minion Translator,
-
-an extension of:
+###### _an extension of:_
 
 jQuery.miniTranslate
 ====================

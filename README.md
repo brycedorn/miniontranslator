@@ -1,11 +1,11 @@
-###### _an extension of:_
+Minion Translator, demo of:
 
 jQuery.miniTranslate
 ====================
 
 A lightweight way to change words into other words.
 
-minitranslate.herokuapp.com
+bryce.io/minitranslate
 
 ## Features
  * WYSIWYG word-replacement translator

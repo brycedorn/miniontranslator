@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+html {
+    background: #fff;
+}
+body {
+    color: #596066;
+    font-family:"Open Sans";
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+a {
+    color: #fbe949;
+}
+a:hover {
+    color: #d4bf04;
+}
+#lminion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+#rminion {
+    position: absolute;
+    right: 0;
+    bottom: -84px;
+}
+.header {
+    width: 100%;
+    height: 320px;
+}
+.header h1 {
+    margin: 0 0 0 400px;
+    padding: 16px 140px 17px 0;
+    background: #596066;
+    color: rgb(208,214,220);
+    text-align: right;
+}
+footer {
+    margin-top: 300px;
+    margin-right: 400px;
+    padding-top: 33px;
+    background: #596066;
+    color: rgb(208,214,220);
+    text-align: left;
+}
+.tut {
+    margin: 0 10px;
+    font-size: 4em;
+}
+.try {
+    margin: 0 auto;
+    width: 80%;
+}
+.try h3 {
+    padding: 10px 4px;
+}
+.nixfocus {
+    padding: 16px;
+    width: 100%;
+    border: rgb(208,214,220) solid 4px;
+    border-radius: 10px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.nixfocus:focus {
+    outline: none;
+}
+*::selection {
+    background: #e8e8e8;
+}
+*::-webkit-selection {
+    background: #e8e8e8;
+}
+hr {
+    display: none;
+}
+#fork {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    border: 0;
+}
+
+@media screen and (max-width: 992px) {
+    hr {
+        display: block;
+        margin: 60px 0 30px 0;
+        border-top: 3px dashed #fbe949;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .header {
+        height: 140px;
+    }
+    .header h1 {
+        margin: 0;
+        padding: 14px;
+        text-align: center;
+    }
+    .tut {
+        font-size: 2em;
+    }
+    .jumbotron {
+        top: -100px;
+        width: 400px;
+        height: 200px;
+    }
+    .jumbotron h1 {
+        padding-top: 56px;
+    }
+    .nixfocus { 
+        font-size: 18px;
+    }
+    #lminion, #rminion {
+        display: none;
+    }
+}

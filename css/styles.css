@@ -26,26 +26,52 @@ a:hover {
 #rminion {
     position: absolute;
     right: 0;
-    bottom: -84px;
+    bottom: 0;
 }
 .header {
     width: 100%;
-    height: 320px;
+    height: 290px;
 }
 .header h1 {
-    margin: 0 0 0 400px;
+    font-weight: 600;
+    margin: 0 0 0 440px;
     padding: 16px 140px 17px 0;
     background: #596066;
     color: rgb(208,214,220);
     text-align: right;
 }
-footer {
-    margin-top: 300px;
-    margin-right: 400px;
-    padding-top: 33px;
+/*
+button.btn {
+    color: #fff;
+    background: #aaa;
+    border: rgb(208,214,220) solid 2px;
+    float: right;
+    position: relative;
+    top: -7px;
+    right: 14px;
+}
+button.btn:hover {
     background: #596066;
-    color: rgb(208,214,220);
+    color: #fbe949;
+    border: rgb(158,164,170) solid 2px;
+}
+*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    width: 100%;
     text-align: left;
+}
+footer h4 {
+    font-weight: 600;
+    background: #596066;
+    padding: 42px 40px 11px 40px;
+    color: rgb(208,214,220);
+    margin: 0 410px 0 0;
+}
+footer small {
+    color: rgb(208,214,220);;
 }
 .tut {
     margin: 0 10px;
@@ -56,6 +82,7 @@ footer {
     width: 80%;
 }
 .try h3 {
+    font-weight: 400;
     padding: 10px 4px;
 }
 .nixfocus {
@@ -92,12 +119,16 @@ hr {
         border-top: 3px dashed #fbe949;
     }
     footer {
-        position: absolute;
         bottom: 0;
-        margin: 0;
+        left: 0;
+        margin: 30px 0 0 0;
         padding: 0;
         width: 100%;
         text-align: center;
+    }
+    footer h4 {
+        padding-top: 14px;
+        margin: 0;
     }
     .header {
         height: 140px;
@@ -108,7 +139,7 @@ hr {
         text-align: center;
     }
     .tut {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .jumbotron {
         top: -100px;

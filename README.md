@@ -5,7 +5,7 @@ jQuery.minitranslate
 
 A lightweight way to change words into other words.
 
-bryce.io/minitranslate
+http://bryce.io/minitranslate
 
 ## Features
  * WYSIWYG word-replacement translator

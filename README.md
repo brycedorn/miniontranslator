@@ -1,4 +1,4 @@
-Minion Translator, demo of:
+Minion Translator is a demo of:
 
 jQuery.miniTranslate
 ====================

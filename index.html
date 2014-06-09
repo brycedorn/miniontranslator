@@ -24,6 +24,7 @@ Minion graphic inspired by ad found here: https://plus.google.com/11067772156393
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 </head>
   <body>
+    <canvas id="canvas"></canvas>
     <div class="container-fluid">
       <div class="row">
         <div class="header">
@@ -31,17 +32,21 @@ Minion graphic inspired by ad found here: https://plus.google.com/11067772156393
         </div>
       </div>
       <div class="row" id="try">
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-5 col-lg-5">
           <div class="input-group-lg try">
             <h3 class="tut">English</h3>
-            <textarea type="text" class="nixfocus" id="mt-input" placeholder="Try it out!"></textarea>
+            <textarea type="text" class="nixfocus mt-patient" id="mt-input" placeholder="Try it out!"></textarea>
           </div>
         </div>
         <hr>
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-2 col-lg-2 buttonwrap">
+          <button id="mt-button" class="btn btn-default">Translate it!</button>
+        </div>
+        <hr class="below">
+        <div class="col-md-5 col-lg-5">
           <div class="input-group-lg try">
             <h3 align="right" class="tut">Minionese</h3>
-            <textarea type="text" class="nixfocus" id="mt-output" placeholder="Translated text!"></textarea>
+            <textarea type="text" class="nixfocus mt-patient" id="mt-output" placeholder="Click 'Translate it'!"></textarea>
           </div>
         </div>
       </div>
@@ -49,10 +54,11 @@ Minion graphic inspired by ad found here: https://plus.google.com/11067772156393
     <img id="lminion" src="img/mini.png"/>
     <img id="rminion" src="img/mini.png"/>
     <a href="https://github.com/brycedorn/miniontranslator"><img id="fork" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js"></script>
+    <script src="js/eyes.js" type="text/paperscript" canvas="canvas"></script>
     <script src="js/mt-lib.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/minitranslate/0.6.3/minitranslate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/minitranslate/0.8.0/minitranslate.min.js"></script>
   </div>
 </body>
 <footer>

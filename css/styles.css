@@ -103,6 +103,13 @@ footer small {
     font-weight: lighter;
     font-size: 24px;
 }
+#output {
+    position: relative;
+    top: -180px;
+}
+#mt-button {
+    top: -90px;
+}
 .nixfocus:focus {
     outline: none;
 }
@@ -116,9 +123,9 @@ hr {
     display: none;
 }
 #fork {
-    position: absolute; 
-    top: 0; 
-    right: 0; 
+    position: absolute;
+    top: 0;
+    right: 0;
     border: 0;
 }
 
@@ -153,13 +160,28 @@ hr {
     hr.below {
         margin: 60px 0 30px 0;
     }
+    .tut {
+        text-align: center;
+    }
+    #fork {
+        width: 100px;
+        height: 100px;
+    }
     footer {
+        position: relative;
         bottom: 0;
         left: 0;
         margin: 30px 0 0 0;
         padding: 0;
         width: 100%;
         text-align: center;
+    }
+    #output {
+        top: 0;
+        margin-bottom: 40px;
+    }
+    #mt-button {
+        top: 0;
     }
     footer h4 {
         margin: 0;
@@ -184,7 +206,7 @@ hr {
     .jumbotron h1 {
         padding-top: 56px;
     }
-    .nixfocus { 
+    .nixfocus {
         font-size: 18px;
     }
     #lminion, #rminion {

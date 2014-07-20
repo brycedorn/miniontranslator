@@ -1,45 +1,11 @@
-Minion Translator is a demo of:
+Minion Translator is an application of [minitranslate.js](http://minitranslate.herokuapp.com).
 
-jQuery.minitranslate
-====================
+# Disclaimer
 
-A lightweight way to change words into other words.
+miniontranslator.com is an independent, unofficial site that is in no way associated with Universal Pictures or any of its affiliates, however we do make every effort to honor their intellectual property and copyrighted material.
 
-http://bryce.io/minitranslate
+If you have any questions please contact us via e-mail at webmaster@miniontranslator.com.
 
-## Features
- * WYSIWYG word-replacement translator
- * RegExp matching and jQuery replacement
- * Simple library in `mt-lib.js`:
-  ```java
-  var mt_lib = [
-    {w : "Hello", r : "Goodbye"},
-    {w : "World", r : "Mars"}
-  ];
-  ```
+# License
 
- * Dynamic input translation:
-  ```html
-  <input id="mt-input"/>
-  <input id="mt-output"/>
-  ```
- * Static content translation:
-
-  ```html
-  <div id="mt-translate"/>
-  ```
-
- * Case insensitive up to input word length:
-   * hElLo => wOrLd
-   * bYe => gOodbye
-
-
- * Dumb punctuation, currently appends to translation
-
-## Installation
-
-#### npm
-  `npm install minitranslate`
-
-#### cdnjs
-  http://cdnjs.com/libraries/minitranslate
+MIT

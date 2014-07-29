@@ -1,9 +1,4 @@
 // Minion eyes!
-// Left right = 264px
-// Left left = 44px
-// Left top = 44px
-// Ltgrey = #d0d6dc
-// Dkgrey = #596066
 
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
@@ -60,16 +55,36 @@ $.each(symbols, function (i, sym) {
 // On mouse movement
 if(!jQuery.browser.mobile) {
   $(document).mousemove(function (event) {
+    var x = event.pageX;
+    var y = event.pageY;
     $.each(symbols, function (i, sym) {
-      sym.remove();
       var path = new Path();
       var start = new Point(eyes[i].xCent, eyes[i].yCent);
       path.moveTo(start);
-      path.lineTo([event.pageX, event.pageY]);
+      path.lineTo([x, y]);
       var circ = new Path.Circle(start, ball);
       t = path.getIntersections(circ);
-      if (!t[0]) symbols[i] = symbol.place([event.pageX, event.pageY]);
-      else symbols[i] = symbol.place(t[0].point);
+      if (!t[0]) {
+        if(x === 264 || x === width - 264) {
+          // do nothing
+        } else {
+          sym.remove();
+          symbols[i] = symbol.place([x, y]);
+        }
+      }
+      else {
+        sym.remove();
+        symbols[i] = symbol.place(t[0].point);
+      }
     });
   });
 }
+
+Socialite.setup({
+  facebook: {
+  lang     : 'en_GB',
+  appId    : 771266896273415
+  }
+});
+
+Socialite.load($('#social-container'));

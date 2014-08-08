@@ -80,11 +80,4 @@ if(!jQuery.browser.mobile) {
   });
 }
 
-Socialite.setup({
-  facebook: {
-  lang     : 'en_GB',
-  appId    : 771266896273415
-  }
-});
-
 Socialite.load($('#social-container'));

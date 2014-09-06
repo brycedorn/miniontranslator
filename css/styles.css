@@ -53,14 +53,16 @@ a:hover {
     font-weight: 600;
 }
 #social-buttons {
-    position: absolute;
-    top: -22px;
-    right: -22px;
+    position: relative;
+    left: 0;
+    right: 0;
+    /*top: 20px;*/
+    /*right: 0;*/
+    float: left;
 }
-#social-container {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
+#like {
+    position: relative;
+    top: -3px;
 }
 button.btn {
     position: relative;
@@ -147,9 +149,9 @@ hr {
         width: 105%;
     }
     #social-buttons {
-        position: relative;
-        width: 196px;
-        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: -40px;
     }
     button.btn {
         margin: 0;
@@ -186,7 +188,7 @@ hr {
         position: relative;
         bottom: -18px;
         left: 0;
-        margin: 30px 0 0 0;
+        margin: 24px 0 0 0;
         padding: 0;
         width: 100%;
         text-align: center;

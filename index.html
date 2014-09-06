@@ -37,18 +37,6 @@ Copyright &copy; 2014
             <div class="header">
                 <h1>Minions Translator</h1>
             </div>
-            <div id="social-container">
-                <ul class="social-buttons cf" id="social-buttons">
-                    <li>
-                        <a href="http://twitter.com/share" class="socialite twitter-share" data-text="“Whaaaaaaat? Translate English to Minionese • minionstranslator.com" data-url="http://www.miniontranslator.com" data-count="vertical" rel="nofollow" target="_blank">
-                            <span class="vhidden">Share on Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.facebook.com/sharer.php?u=http://www.minionstranslator.com&amp;t=MinionsTranslator" class="socialite facebook-like" data-href="http://minionstranslator.com" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a>
-                    </li>
-                </ul>
-            </div>
         </div>
         <div class="row" id="try">
             <div class="col-md-5 col-lg-5">
@@ -74,7 +62,6 @@ Copyright &copy; 2014
     <img id="rminion" src="img/mini.png" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js"></script>
-    <script src="//cdn.jsdelivr.net/socialite/2.0/socialite.min.js"></script>
     <script src="js/eyes.js" type="text/paperscript" canvas="canvas"></script>
     <script src="js/library.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/minitranslate/1.1.2/minitranslate.min.js"></script>
@@ -86,6 +73,14 @@ Copyright &copy; 2014
       ga('create', 'UA-53256803-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
 </body>
 <footer>
@@ -94,6 +89,10 @@ Copyright &copy; 2014
             <h4>Crafted with love with <a href="http://minitranslate.herokuapp.com">minitranslate.js</a>,
                 <small>&copy; 2014 <a href="http://opensource.org/licenses/MIT">MIT</a>
                 </small>
+                <div id="social-buttons">
+                    <fb:like href="https://www.facebook.com/minionstranslator" id='like' width="100" layout="button_count" show_faces="true" send="false"></fb:like>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Whaaaaaaat? Translate English to Minionese • minionstranslator.com" data-hashtags="minionstranslator">Tweet</a>
+                </div>
             </h4>
         </div>
     </div>

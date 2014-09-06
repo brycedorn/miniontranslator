@@ -79,5 +79,3 @@ if(!jQuery.browser.mobile) {
     });
   });
 }
-
-Socialite.load($('#social-container'));

@@ -46,7 +46,7 @@ a:hover {
 }
 .header h1 {
     margin: 0 0 0 440px;
-    padding: 16px 280px 17px 0;
+    padding: 16px 50px 17px 0;
     background: #596066;
     color: #d0d6dc;
     text-align: right;
@@ -104,7 +104,7 @@ footer small {
     font-size: 4em;
 }
 .try {
-    margin: 40px auto;
+    margin: 20px auto;
     width: 80%;
 }
 .try h3 {

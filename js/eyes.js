@@ -78,4 +78,6 @@ if(!jQuery.browser.mobile) {
       }
     });
   });
+} else {
+  $(document).width(991);
 }

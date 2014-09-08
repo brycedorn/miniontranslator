@@ -48,7 +48,7 @@ a:hover {
     height: 290px;
 }
 .header h1 {
-    margin: 0 0 0 440px;
+    margin: 0 0 0 439px;
     padding: 16px 50px 17px 0;
     background: #596066;
     color: #d0d6dc;
@@ -141,13 +141,22 @@ hr {
     right: 0;
     border: 0;
 }
+#mobile-buttons { 
+    display: none;
+    width: 100%;
+    padding-left: 30px;
+    text-align: center;
+}
+#mobile-buttons #like {
+    top: -5px;
+}
+
 @media screen and (max-width: 1093px) {
     #social-buttons {
-        top: -100px;
+        display: none;
     }
-    footer h4 { 
-        position: relative;
-        top: 12px;
+    #mobile-buttons {
+        display: block;
     }
 }
 @media screen and (max-width: 992px) {
@@ -164,6 +173,7 @@ hr {
     .buttonwrap {
         width: 105%;
     }
+    #mobile-buttons { display: none; }
     #social-buttons {
         display: block;
         position: absolute;

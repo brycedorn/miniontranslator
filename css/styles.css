@@ -143,8 +143,12 @@ hr {
 }
 @media screen and (max-width: 1093px) {
     #social-buttons {
-        display: none;
-    }    
+        top: -100px;
+    }
+    footer h4 { 
+        position: relative;
+        top: 12px;
+    }
 }
 @media screen and (max-width: 992px) {
     .try {
@@ -199,7 +203,7 @@ hr {
     }
     footer {
         position: relative;
-        bottom: -240px;
+        bottom: -14px;
         left: 0;
         margin: 24px 0 0 0;
         padding: 0;

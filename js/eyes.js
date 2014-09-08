@@ -79,5 +79,5 @@ if(!jQuery.browser.mobile) {
     });
   });
 } else {
-  $(document).width(991);
+  $(document).width(992);
 }

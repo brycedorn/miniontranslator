@@ -5,13 +5,16 @@ html {
     height: 100%;
 }
 body {
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 100%;
     padding: 0;
     color: #596066;
     font-family:"Open Sans";
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
+}
+.row {
+    margin: 0;
 }
 a {
     color: #fbe949;
@@ -53,6 +56,7 @@ a:hover {
     font-weight: 600;
 }
 #social-buttons {
+    display: block;
     position: relative;
     left: 0;
     right: 0;
@@ -67,7 +71,7 @@ a:hover {
 button.btn {
     position: relative;
     float: right;
-    margin: 144px auto;
+    margin: 114px auto;
     width: 100%;
     height: 54px;
     border: #d0d6dc solid 2px;
@@ -85,7 +89,7 @@ button:focus {
 footer {
     position: absolute;
     bottom: 0;
-    left: -15px;
+    left: -25px;
     width: 100%;
     text-align: left;
 }
@@ -104,7 +108,7 @@ footer small {
     font-size: 4em;
 }
 .try {
-    margin: 20px auto;
+    margin: 4px auto;
     width: 80%;
 }
 .try h3 {
@@ -137,8 +141,16 @@ hr {
     right: 0;
     border: 0;
 }
-
+@media screen and (max-width: 1093px) {
+    #social-buttons {
+        display: none;
+    }    
+}
 @media screen and (max-width: 992px) {
+    .try {
+        margin: 40px auto;
+        width: 80%;
+    }
     .container-fluid {
         height: 90%;
     }
@@ -149,9 +161,10 @@ hr {
         width: 105%;
     }
     #social-buttons {
+        display: block;
         position: absolute;
-        right: 0;
-        top: -40px;
+        left: 36px;
+        top: -60px;
     }
     button.btn {
         margin: 0;
@@ -186,14 +199,15 @@ hr {
     }
     footer {
         position: relative;
-        bottom: -18px;
+        bottom: -240px;
         left: 0;
         margin: 24px 0 0 0;
         padding: 0;
         width: 100%;
         text-align: center;
-        border-bottom: #596066 solid 100px;
+        /*border-bottom: #596066 solid 10px;*/
     }
+
     #output {
         top: 0;
         margin-bottom: 40px;

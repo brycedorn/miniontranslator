@@ -78,6 +78,10 @@ if(!jQuery.browser.mobile) {
       }
     });
   });
+  // On resize, refresh
+  window.onresize = function() {
+    location.reload();
+  };
 } else {
   $(document).width(992);
 }
